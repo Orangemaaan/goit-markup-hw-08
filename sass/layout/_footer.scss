@@ -1,0 +1,126 @@
+.footer {
+    background-color: var(--background-dark-theme);
+
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer-container {
+    display: flex;
+    align-items: baseline;
+}
+
+.logo-footer {
+    display: inline-block;
+
+    margin-bottom: 20px;
+}
+
+.contact-list-footer > .contact-list-item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.legal-address {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+
+    color: var(--text-color-theme-light);
+
+    transition: color 250ms var(--animation-timing-function);
+
+    &:hover,
+    :focus {
+        color: var(--accent-color);
+    }
+}
+
+.contact-list-footer {
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    font-style: normal;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    transition: color 250ms var(--animation-timing-function);
+
+    &:hover,
+    :focus {
+        color: var(--accent-color);
+    }
+}
+
+.subscription-buttons {
+    margin-left: 70px;
+}
+
+.join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--text-color-theme-light);
+}
+
+.mail-outs {
+    margin-left: auto;
+}
+
+.subcribe {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: var(--text-color-theme-light);
+}
+
+.footer-form {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-form input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    border-radius: 4px;
+
+    padding: 15px 16px;
+    margin-top: 20px;
+    margin-right: 12px;
+
+    color: var(--text-color-theme-light);
+    background: transparent;
+
+    transition: border-color 250ms var(--animation-timing-function);
+
+    &:focus {
+        outline: none;
+        border-color: var(--accent-color);
+    }
+
+    &::placeholder {
+        font-size: 16px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+
+        color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.footer-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-send {
+    margin-left: 10px;
+}
