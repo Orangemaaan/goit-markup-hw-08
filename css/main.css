@@ -176,8 +176,8 @@ section {
   transition: fill 250ms var(--animation-timing-function);
 }
 
-.social-link-logo:hover,
-.social-link-logo :focus {
+.social-link:hover .social-link-logo,
+.social-link:focus .social-link-logo {
   fill: var(--text-color-theme-light);
 }
 
