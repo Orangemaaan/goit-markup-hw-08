@@ -66,13 +66,8 @@ img {
 }
 
 section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 @media screen and (min-width: 480px) {
@@ -120,7 +115,6 @@ section {
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
-  width: 270px;
   color: var(--secondary-text-color-theme-dark);
 }
 
@@ -242,13 +236,13 @@ section {
   line-height: 1.2;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  text-align: center;
   margin-bottom: 10px;
   color: var(--primary-text-color-theme-dark);
 }
 
 .header {
   position: relative;
-  background-color: var(--text-color-theme-light);
   padding-top: 16px;
   padding-bottom: 16px;
 }
@@ -283,6 +277,7 @@ section {
     width: 100%;
     height: 100vh;
     overflow: auto;
+    background-color: var(--text-color-theme-light);
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
@@ -302,7 +297,7 @@ section {
   .mobile-menu__close-btn {
     position: absolute;
     top: 25px;
-    right: 25px;
+    right: 12px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -418,12 +413,18 @@ section {
   background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/mobile-hero-background@2x.jpg);
+  }
+}
+
 .benefits-background {
   display: flex;
   background-color: var(--background-light-theme);
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-bottom: 30px;
-  width: 270px;
-  height: 120px;
   border-radius: 4px;
   align-items: center;
   justify-content: center;
@@ -434,11 +435,7 @@ section {
 }
 
 .benefits-list__item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.benefits-list {
-  display: flex;
+  margin-bottom: 30px;
 }
 
 .services {

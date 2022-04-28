@@ -9,6 +9,14 @@
     background-repeat: no-repeat;
 }
 
+@media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+        background-image: url(../images/mobile-hero-background@2x.jpg);
+    }
+}
+
 // .hero {
 //     text-align: center;
 //     padding-top: 200px;
