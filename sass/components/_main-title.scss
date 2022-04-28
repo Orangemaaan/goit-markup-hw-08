@@ -1,12 +1,35 @@
-.main-title {
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
+// .main-title {
+//     font-weight: 900;
+//     font-size: 44px;
+//     line-height: 1.4;
+//     letter-spacing: 0.06em;
+//     text-transform: uppercase;
 
-    width: 696px;
-    margin: 0 auto 30px auto;
+//     width: 696px;
+//     margin: 0 auto 30px auto;
 
-    color: var(--text-color-theme-light);
+//     color: var(--text-color-theme-light);
+// }
+
+@media screen and (max-width: 767px) {
+    .main-title {
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.615;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        width: 360px;
+        margin: 0 auto 30px auto;
+
+        color: var(--text-color-theme-light);
+    }
+    
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px) {
+
 }
