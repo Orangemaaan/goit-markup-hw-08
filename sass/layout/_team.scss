@@ -2,8 +2,12 @@
     background-color: var(--background-light-theme);
 }
 
-.employees-list {
-    display: flex;
+.team-title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    margin-bottom: 30px;
 }
 
 .employee-card {
@@ -14,7 +18,7 @@
     background-color: var(--text-color-theme-light);
 
     &:not(:last-child) {
-        margin-right: 30px;
+        margin-bottom: 30px;
     }
 }
 

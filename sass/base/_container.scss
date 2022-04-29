@@ -6,11 +6,12 @@
 //     margin-right: auto;
 // }
 
-// .container {
-//     padding-left: 15px;
-//     padding-right: 15px;
-// }
-
+@media screen and (max-width: 479px) {
+    .container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
 @media screen and (min-width: 480px) {
     .container {
         width: 450px;

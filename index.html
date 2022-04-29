@@ -130,16 +130,24 @@
                     <div class="mobile-social-link__container">
                         <ul class="list mobile-social-link-list">
                             <li class="mobile-social-link-list__item">
-                                <a class="mobile-social-link-list__link" href="">Instagram</a>
+                                <a class="mobile-social-link-list__link" href=""
+                                    >Instagram</a
+                                >
                             </li>
                             <li class="mobile-social-link-list__item">
-                                <a class="mobile-social-link-list__link" href="">Twitter</a>
+                                <a class="mobile-social-link-list__link" href=""
+                                    >Twitter</a
+                                >
                             </li>
                             <li class="mobile-social-link-list__item">
-                                <a class="mobile-social-link-list__link" href="">Facebook</a>
+                                <a class="mobile-social-link-list__link" href=""
+                                    >Facebook</a
+                                >
                             </li>
                             <li class="mobile-social-link-list__item">
-                                <a class="mobile-social-link-list__link" href="">LinkedIn</a>
+                                <a class="mobile-social-link-list__link" href=""
+                                    >LinkedIn</a
+                                >
                             </li>
                         </ul>
                     </div>
@@ -302,18 +310,63 @@
             </section> -->
 
             <!-- TEAM -->
-            <!-- <section class="team">
+            <section class="team">
                 <div class="team-container container">
-                    <h2 class="team-title title">Наша команда</h2>
+                    <h2 class="title team-title">Наша команда</h2>
                     <ul class="employees-list list">
                         <li class="employee-card">
-                            <img
-                                class="employee-photo"
-                                src="./images/product-designer.jpg"
-                                alt="Игорь Демьяненко"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop-product-designer.webp    1x,
+                                        ./images/desktop-product-designer@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop-product-designer.jpg    1x,
+                                        ./images/desktop-product-designer@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-product-designer.webp    1x,
+                                        ./images/tablet-product-designer@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-product-designer.jpg    1x,
+                                        ./images/tablet-product-designer@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-product-designer.webp    1x,
+                                        ./images/mobile-product-designer@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-product-designer.jpg    1x,
+                                        ./images/mobile-product-designer@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./images/mobile-product-designer.jpg"
+                                    alt="product designer"
+                                />
+                            </picture>
+
                             <div class="employee-description">
                                 <h3 class="employee-name">Игорь Демьяненко</h3>
                                 <p lang="en" class="employee-position">
@@ -376,13 +429,57 @@
                             </div>
                         </li>
                         <li class="employee-card">
-                            <img
-                                class="employee-photo"
-                                src="./images/frontend-developer.jpg"
-                                alt="Ольга Репина"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop-frontend-developer.webp    1x,
+                                        ./images/desktop-frontend-developer@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop-frontend-developer.jpg    1x,
+                                        ./images/desktop-frontend-developer@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-frontend-developer.webp    1x,
+                                        ./images/tablet-frontend-developer@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-frontend-developer.jpg    1x,
+                                        ./images/tablet-frontend-developer@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-frontend-developer.webp    1x,
+                                        ./images/mobile-frontend-developer@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-frontend-developer.jpg    1x,
+                                        ./images/mobile-frontend-developer@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./images/mobile-frontend-developer.jpg"
+                                    alt="frontend developer"
+                                />
+                            </picture>
                             <div class="employee-description">
                                 <h3 class="employee-name">Ольга Репина</h3>
                                 <p lang="en" class="employee-position">
@@ -445,13 +542,57 @@
                             </div>
                         </li>
                         <li class="employee-card">
-                            <img
-                                class="employee-photo"
-                                src="./images/marketing.jpg"
-                                alt="Николай Тарасов"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop-marketing.webp    1x,
+                                        ./images/desktop-marketing@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop-marketing.jpg    1x,
+                                        ./images/desktop-marketing@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-marketing.webp    1x,
+                                        ./images/tablet-marketing@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-marketing.jpg    1x,
+                                        ./images/tablet-marketing@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-marketing.webp    1x,
+                                        ./images/mobile-marketing@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-marketing.jpg    1x,
+                                        ./images/mobile-marketing@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./images/mobile-marketing.jpg"
+                                    alt="marketing"
+                                />
+                            </picture>
                             <div class="employee-description">
                                 <h3 class="employee-name">Николай Тарасов</h3>
                                 <p lang="en" class="employee-position">
@@ -514,13 +655,57 @@
                             </div>
                         </li>
                         <li class="employee-card">
-                            <img
-                                class="employee-photo"
-                                src="./images/ui-designer.jpg"
-                                alt="Михаил Ермаков"
-                                width="270"
-                                height="260"
-                            />
+                            <picture>
+                                <source
+                                    srcset="
+                                        ./images/desktop-ui-designer.webp    1x,
+                                        ./images/desktop-ui-designer@2x.webp 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/desktop-ui-designer.jpg    1x,
+                                        ./images/desktop-ui-designer@2x.jpg 2x
+                                    "
+                                    media="(min-width: 1200px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-ui-designer.webp    1x,
+                                        ./images/tablet-ui-designer@2x.webp 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/tablet-ui-designer.jpg    1x,
+                                        ./images/tablet-ui-designer@2x.jpg 2x
+                                    "
+                                    media="(min-width: 768px)"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-ui-designer.webp    1x,
+                                        ./images/mobile-ui-designer@2x.webp 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                    type="image/webp"
+                                />
+                                <source
+                                    srcset="
+                                        ./images/mobile-ui-designer.jpg    1x,
+                                        ./images/mobile-ui-designer@2x.jpg 2x
+                                    "
+                                    media="(max-width: 767px)"
+                                />
+                                <img
+                                    src="./images/mobile-ui-designer.jpg"
+                                    alt="ui designer"
+                                />
+                            </picture>
                             <div class="employee-description">
                                 <h3 class="employee-name">Михаил Ермаков</h3>
                                 <p lang="en" class="employee-position">
@@ -584,12 +769,12 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
 
             <!-- CLIENTS -->
-            <!-- <section class="clients">
+            <section class="clients">
                 <div class="clients-container container">
-                    <h2 class="clients-title title">Постоянные клиенты</h2>
+                    <h2 class="title clients-title">Постоянные клиенты</h2>
                     <ul class="clients-list list">
                         <li class="clients-list-item">
                             <a class="clients-link" href="">
@@ -671,10 +856,10 @@
                         </li>
                     </ul>
                 </div>
-            </section> -->
+            </section>
         </main>
 
-        <!-- <footer class="footer">
+        <footer class="footer">
             <div class="footer-container container">
                 <div class="footer-first-column">
                     <a class="logo-footer logo" lang="en" href="./index.html"
@@ -787,7 +972,7 @@
                     </form>
                 </div>
             </div>
-        </footer> -->
+        </footer>
 
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">

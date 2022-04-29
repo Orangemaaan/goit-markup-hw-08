@@ -70,6 +70,13 @@ section {
   padding-bottom: 60px;
 }
 
+@media screen and (max-width: 479px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
@@ -212,6 +219,8 @@ section {
 
 .social-link-list-footer {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
   transition: background-color 250ms var(--animation-timing-function);
 }
@@ -419,6 +428,30 @@ section {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: url(../images/tablet-hero-background.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/tablet-hero-background@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero {
+    background-image: url(../images/desktop-hero-background.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(../images/desktop-hero-background@2x.jpg);
+  }
+}
+
 .benefits-background {
   display: flex;
   background-color: var(--background-light-theme);
@@ -480,8 +513,12 @@ section {
   background-color: var(--background-light-theme);
 }
 
-.employees-list {
-  display: flex;
+.team-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
 }
 
 .employee-card {
@@ -491,7 +528,7 @@ section {
 }
 
 .employee-card:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .employee-description {
@@ -517,17 +554,24 @@ section {
   color: var(--secondary-text-color-theme-dark);
 }
 
+.clients-title {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  margin-bottom: 30px;
+}
+
 .clients-list {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .clients-list > .clients-list-item {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--clients-logo-border);
   box-sizing: border-box;
@@ -540,11 +584,16 @@ section {
   border-color: var(--accent-color);
 }
 
-.clients-list > .clients-list-item:not(:last-child) {
+.clients-list-item:nth-child(2n + 1) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.clients-link {
+.clients-list-item:nth-child(5) {
+  margin-bottom: 0;
+}
+
+.clients-list-item .clients-link {
   display: block;
   align-items: center;
   justify-content: center;
@@ -571,8 +620,7 @@ section {
 }
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
 }
 
 .logo-footer {
@@ -613,7 +661,7 @@ section {
 }
 
 .subscription-buttons {
-  margin-left: 70px;
+  margin-top: 60px;
 }
 
 .join {
@@ -626,7 +674,7 @@ section {
 }
 
 .mail-outs {
-  margin-left: auto;
+  margin-top: 60px;
 }
 
 .subcribe {
@@ -639,12 +687,12 @@ section {
 }
 
 .footer-form {
-  display: flex;
-  align-items: baseline;
+  display: block;
+  text-align: center;
 }
 
 .footer-form input {
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -671,8 +719,9 @@ section {
 
 .footer-btn {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  margin-top: 30px;
 }
 
 .icon-send {
@@ -700,8 +749,8 @@ section {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 530px;
-  height: 580px;
+  width: 450px;
+  height: 610px;
   padding: 40px;
   background-color: var(--text-color-theme-light);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -732,7 +781,7 @@ section {
 .modal-appeal {
   font-size: 20px;
   font-weight: 700;
-  line-height: 1.15;
+  line-height: 1.5;
   letter-spacing: 0.03em;
   text-align: center;
   margin-bottom: 12px;
@@ -740,7 +789,7 @@ section {
 }
 
 .modal-form {
-  width: 450px;
+  width: 370px;
 }
 
 .modal-form-field {
@@ -829,7 +878,8 @@ section {
 }
 
 .checkbox-label {
-  line-height: 1.17;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-dark);
 }

@@ -55,6 +55,8 @@
 
 .social-link-list-footer {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 20px;
 
     transition: background-color 250ms var(--animation-timing-function);

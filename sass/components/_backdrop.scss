@@ -22,8 +22,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 530px;
-    height: 580px;
+    width: 450px;
+    height: 610px;
     padding: 40px;
 
     background-color: var(--text-color-theme-light);
@@ -59,7 +59,7 @@
 .modal-appeal {
     font-size: 20px;
     font-weight: 700;
-    line-height: 1.15;
+    line-height: 1.5;
     letter-spacing: 0.03em;
     text-align: center;
 
@@ -69,7 +69,7 @@
 }
 
 .modal-form {
-    width: 450px;
+    width: 370px;
 }
 
 .modal-form-field {
@@ -163,7 +163,8 @@
 }
 
 .checkbox-label {
-    line-height: 1.17;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     color: var(--secondary-text-color-theme-dark);
 

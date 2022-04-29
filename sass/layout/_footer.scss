@@ -6,8 +6,7 @@
 }
 
 .footer-container {
-    display: flex;
-    align-items: baseline;
+    text-align: center;
 }
 
 .logo-footer {
@@ -53,7 +52,7 @@
 }
 
 .subscription-buttons {
-    margin-left: 70px;
+    margin-top: 60px;
 }
 
 .join {
@@ -67,7 +66,7 @@
 }
 
 .mail-outs {
-    margin-left: auto;
+    margin-top: 60px;
 }
 
 .subcribe {
@@ -81,12 +80,12 @@
 }
 
 .footer-form {
-    display: flex;
-    align-items: baseline;
+    display: block;
+    text-align: center;
 }
 
 .footer-form input {
-    width: 358px;
+    width: 450px;
     height: 50px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-sizing: border-box;
@@ -117,8 +116,9 @@
 
 .footer-btn {
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    margin-top: 30px;
 }
 
 .icon-send {
