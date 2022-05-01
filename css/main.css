@@ -73,13 +73,13 @@ section {
 .container {
   padding-left: 15px;
   padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
     width: 450px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 
@@ -257,10 +257,6 @@ section {
 }
 
 @media screen and (max-width: 767px) {
-  .header {
-    padding-top: 16px;
-    padding-bottom: 16px;
-  }
   .nav-list {
     display: none;
   }
@@ -366,6 +362,9 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+  .header {
+    padding: 0;
+  }
   .logo-header {
     padding-top: 26px;
     padding-bottom: 26px;
@@ -599,15 +598,6 @@ section {
 .clients-list > .clients-list-item:hover,
 .clients-list > .clients-list-item :focus {
   border-color: var(--accent-color);
-}
-
-.clients-list-item:nth-child(2n + 1) {
-  margin-right: 30px;
-  margin-bottom: 30px;
-}
-
-.clients-list-item:nth-child(5) {
-  margin-bottom: 0;
 }
 
 .clients-list-item .clients-link {

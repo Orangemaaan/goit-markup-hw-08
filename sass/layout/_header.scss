@@ -1,7 +1,5 @@
 .header {
     position: relative;
-    // padding-top: 16px;
-    // padding-bottom: 16px;
 }
 
 .header-container {
@@ -11,10 +9,6 @@
 }
 
 @media screen and (max-width: 767px) {
-    .header {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
     .nav-list {
         display: none;
     }
@@ -148,10 +142,11 @@
     }
 }
 @media screen and (min-width: 768px) {
-    // .header {
-    //     padding-top: 26px;
-    //     padding-bottom: 26px;
-    // }
+    .header {
+        // padding-top: 26px;
+        // padding-bottom: 26px;
+        padding: 0;
+    }
 
     .logo-header {
         padding-top: 26px;
