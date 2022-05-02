@@ -9,12 +9,17 @@
 .clients-list {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
 }
 
 .clients-list > .clients-list-item {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
 
     width: 210px;
     height: 92px;
@@ -45,10 +50,6 @@
 // }
 
 .clients-list-item .clients-link {
-    display: block;
-    align-items: center;
-    justify-content: center;
-
     width: 170px;
     height: 92px;
 

@@ -581,12 +581,17 @@ section {
 .clients-list {
   display: flex;
   flex-wrap: wrap;
+  margin-right: -30px;
+  margin-bottom: -30px;
 }
 
 .clients-list > .clients-list-item {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-basis: calc((100% - 2 * 30px) / 2);
+  margin-right: 30px;
+  margin-bottom: 30px;
   width: 210px;
   height: 92px;
   border: 1px solid var(--clients-logo-border);
@@ -601,9 +606,6 @@ section {
 }
 
 .clients-list-item .clients-link {
-  display: block;
-  align-items: center;
-  justify-content: center;
   width: 170px;
   height: 92px;
   padding: 16px 32px;
@@ -921,8 +923,8 @@ section {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 .filter-item-button {
@@ -950,19 +952,6 @@ section {
 
 .filter-item:not(:last-child) {
   margin-right: 8px;
-}
-
-.portfolio-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-right: -30px;
-  margin-bottom: -30px;
-}
-
-.portfolio-item {
-  margin-right: 30px;
-  margin-bottom: 30px;
-  flex-basis: calc((100% - 3 * 30px) / 3);
 }
 
 .project-card {

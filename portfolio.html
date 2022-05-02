@@ -24,19 +24,17 @@
     <body>
         <!-- HEADER -->
         <header class="header">
-            <div class="header-container container">
+            <div class="container header-container">
                 <nav class="navigation">
                     <a lang="en" class="logo-header logo" href="./index.html"
                         >Web<span class="logo-accent_header">Studio</span></a
                     >
                     <ul class="nav-list list">
                         <li class="nav-list__item">
-                            <a class="nav-list__link" href="./index.html"
-                                >Студия</a
-                            >
+                            <a class="nav-list__link current" href="">Студия</a>
                         </li>
                         <li class="nav-list__item">
-                            <a class="nav-list__link current" href=""
+                            <a class="nav-list__link" href="./portfolio.html"
                                 >Портфолио</a
                             >
                         </li>
@@ -45,6 +43,11 @@
                         </li>
                     </ul>
                 </nav>
+                <button type="button" class="mobile-menu-btn" data-menu-open>
+                    <svg class="mobile-menu-btn__icon" width="40" height="40">
+                        <use href="./images/icons.svg#icon-burger-menu"></use>
+                    </svg>
+                </button>
                 <ul class="contact-list list">
                     <li class="contact-list__item">
                         <a
@@ -70,6 +73,87 @@
                         >
                     </li>
                 </ul>
+            </div>
+
+            <div class="mobile-menu" data-menu>
+                <div class="container mobile-menu__container">
+                    <button
+                        type="button"
+                        class="mobile-menu__close-btn"
+                        data-menu-close
+                    >
+                        <svg
+                            class="mobile-menu__close-icon"
+                            width="18px"
+                            height="18px"
+                        >
+                            <use href="./images/icons.svg#close-icon"></use>
+                        </svg>
+                    </button>
+                    <div class="mobile-nav-list__container">
+                        <ul class="list mobile-nav-list">
+                            <li class="mobile-nav-list__item">
+                                <a
+                                    class="mobile-nav-list__link"
+                                    href="./index.html"
+                                    >Студия</a
+                                >
+                            </li>
+                            <li class="mobile-nav-list__item">
+                                <a class="mobile-nav-list__link current" href=""
+                                    >Портфолио</a
+                                >
+                            </li>
+                            <li class="mobile-nav-list__item">
+                                <a class="mobile-nav-list__link" href=""
+                                    >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-contact-list__container">
+                        <ul class="list mobile-contact-list">
+                            <li class="mobile-contact-list__item">
+                                <a
+                                    class="mobile-contact-list__tel"
+                                    href="tel:+380961111111"
+                                    >+38 096 111 11 11</a
+                                >
+                            </li>
+                            <li class="mobile-contact-list__item">
+                                <a
+                                    class="mobile-contact-list__mail"
+                                    href="mailto:info@devstudio.com"
+                                    >info@devstudio.com</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-social-link__container">
+                        <ul class="list mobile-social-link-list">
+                            <li class="mobile-social-link-list__item">
+                                <a class="mobile-social-link-list__link" href=""
+                                    >Instagram</a
+                                >
+                            </li>
+                            <li class="mobile-social-link-list__item">
+                                <a class="mobile-social-link-list__link" href=""
+                                    >Twitter</a
+                                >
+                            </li>
+                            <li class="mobile-social-link-list__item">
+                                <a class="mobile-social-link-list__link" href=""
+                                    >Facebook</a
+                                >
+                            </li>
+                            <li class="mobile-social-link-list__item">
+                                <a class="mobile-social-link-list__link" href=""
+                                    >LinkedIn</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -111,11 +195,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/laptop.jpg"
-                                        alt="Наши люди"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-web-site.webp    1x,
+                                                ./images/desktop-web-site@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-web-site.jpg    1x,
+                                                ./images/desktop-web-site@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-web-site.webp    1x,
+                                                ./images/tablet-web-site@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-web-site.jpg    1x,
+                                                ./images/tablet-web-site@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-web-site.webp    1x,
+                                                ./images/mobile-web-site@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-web-site.jpg    1x,
+                                                ./images/mobile-web-site@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-web-site.jpg"
+                                            alt="web site"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -133,11 +263,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/basketball.jpg"
-                                        alt="Баскетбол"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-basketball.webp    1x,
+                                                ./images/desktop-basketball@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-basketball.jpg    1x,
+                                                ./images/desktop-basketball@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-basketball.webp    1x,
+                                                ./images/tablet-basketball@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-basketball.jpg    1x,
+                                                ./images/tablet-basketball@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-basketball.webp    1x,
+                                                ./images/mobile-basketball@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-basketball.jpg    1x,
+                                                ./images/mobile-basketball@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-basketball.jpg"
+                                            alt="basketball"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -160,11 +336,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/seafood.jpg"
-                                        alt="Ресторан морской еды"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-seafood.webp    1x,
+                                                ./images/desktop-seafood@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-seafood.jpg    1x,
+                                                ./images/desktop-seafood@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-seafood.webp    1x,
+                                                ./images/tablet-seafood@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-seafood.jpg    1x,
+                                                ./images/tablet-seafood@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-seafood.webp    1x,
+                                                ./images/mobile-seafood@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-seafood.jpg    1x,
+                                                ./images/mobile-seafood@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-seafood.jpg"
+                                            alt="seafood"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -184,11 +406,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/headphones.jpg"
-                                        alt="Наушники"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-prime.webp    1x,
+                                                ./images/desktop-prime@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-prime.jpg    1x,
+                                                ./images/desktop-prime@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-prime.webp    1x,
+                                                ./images/tablet-prime@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-prime.jpg    1x,
+                                                ./images/tablet-prime@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-prime.webp    1x,
+                                                ./images/mobile-prime@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-prime.jpg    1x,
+                                                ./images/mobile-prime@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-prime.jpg"
+                                            alt="prime"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -208,11 +476,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/boxes.jpg"
-                                        alt="Коробки"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-boxes.webp    1x,
+                                                ./images/desktop-boxes@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-boxes.jpg    1x,
+                                                ./images/desktop-boxes@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-boxes.webp    1x,
+                                                ./images/tablet-boxes@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-boxes.jpg    1x,
+                                                ./images/tablet-boxes@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-boxes.webp    1x,
+                                                ./images/mobile-boxes@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-boxes.jpg    1x,
+                                                ./images/mobile-boxes@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-boxes.jpg"
+                                            alt="boxes"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -232,11 +546,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/pc.jpg"
-                                        alt="Вдохновение не имеет границ"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-inspiration.webp    1x,
+                                                ./images/desktop-inspiration@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-inspiration.jpg    1x,
+                                                ./images/desktop-inspiration@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-inspiration.webp    1x,
+                                                ./images/tablet-inspiration@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-inspiration.jpg    1x,
+                                                ./images/tablet-inspiration@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-inspiration.webp    1x,
+                                                ./images/mobile-inspiration@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-inspiration.jpg    1x,
+                                                ./images/mobile-inspiration@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-inspiration.jpg"
+                                            alt="inspiration"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -256,11 +616,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/magazine.jpg"
-                                        alt="Ограниченное издание"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-limited.webp    1x,
+                                                ./images/desktop-limited@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-limited.jpg    1x,
+                                                ./images/desktop-limited@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-limited.webp    1x,
+                                                ./images/tablet-limited@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-limited.jpg    1x,
+                                                ./images/tablet-limited@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-limited.webp    1x,
+                                                ./images/mobile-limited@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-limited.jpg    1x,
+                                                ./images/mobile-limited@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-limited.jpg"
+                                            alt="limited"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -281,11 +687,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/label-tag.jpg"
-                                        alt="Проект ярлык"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-label.webp    1x,
+                                                ./images/desktop-label@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-label.jpg    1x,
+                                                ./images/desktop-label@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-label.webp    1x,
+                                                ./images/tablet-label@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-label.jpg    1x,
+                                                ./images/tablet-label@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-label.webp    1x,
+                                                ./images/mobile-label@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-label.jpg    1x,
+                                                ./images/mobile-label@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-label.jpg"
+                                            alt="label"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала
@@ -305,11 +757,57 @@
                         <li class="portfolio-item">
                             <a class="project-card" href="">
                                 <div class="image-wrapper">
-                                    <img
-                                        src="./images/laptop-typing.jpg"
-                                        alt="Растущий бизнес"
-                                        width="370"
-                                    />
+                                    <picture>
+                                        <source
+                                            srcset="
+                                                ./images/desktop-growing.webp    1x,
+                                                ./images/desktop-growing@2x.webp 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/desktop-growing.jpg    1x,
+                                                ./images/desktop-growing@2x.jpg 2x
+                                            "
+                                            media="(min-width: 1200px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-growing.webp    1x,
+                                                ./images/tablet-growing@2x.webp 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/tablet-growing.jpg    1x,
+                                                ./images/tablet-growing@2x.jpg 2x
+                                            "
+                                            media="(min-width: 768px)"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-growing.webp    1x,
+                                                ./images/mobile-growing@2x.webp 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                            type="image/webp"
+                                        />
+                                        <source
+                                            srcset="
+                                                ./images/mobile-growing.jpg    1x,
+                                                ./images/mobile-growing@2x.jpg 2x
+                                            "
+                                            media="(max-width: 767px)"
+                                        />
+                                        <img
+                                            src="./images/mobile-growing.jpg"
+                                            alt="growing"
+                                        />
+                                    </picture>
                                     <p class="overlay">
                                         Ресурс предлагает комплексные
                                         предложения с разным уровнем функционала

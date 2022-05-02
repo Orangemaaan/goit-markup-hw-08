@@ -10,9 +10,9 @@
 
 .filter {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
 
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .filter-item-button {
@@ -49,18 +49,18 @@
     margin-right: 8px;
 }
 
-.portfolio-list {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-}
+// .portfolio-list {
+//     display: flex;
+//     flex-wrap: wrap;
+//     margin-right: -30px;
+//     margin-bottom: -30px;
+// }
 
-.portfolio-item {
-    margin-right: 30px;
-    margin-bottom: 30px;
-    flex-basis: calc((100% - 3 * 30px) / 3);
-}
+// .portfolio-item {
+//     margin-right: 30px;
+//     margin-bottom: 30px;
+//     flex-basis: calc((100% - 3 * 30px) / 3);
+// }
 
 .project-card {
     display: block;
