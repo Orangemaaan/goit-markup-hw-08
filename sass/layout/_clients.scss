@@ -24,16 +24,9 @@
     width: 210px;
     height: 92px;
 
-    border: 1px solid var(--clients-logo-border);
     box-sizing: border-box;
-    border-radius: 4px;
 
     transition: border-color 250ms var(--animation-timing-function);
-
-    &:hover,
-    :focus {
-        border-color: var(--accent-color);
-    }
 
     // &:not(:last-child) {
     //     margin-right: 30px;
@@ -50,12 +43,21 @@
 // }
 
 .clients-list-item .clients-link {
-    width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
     height: 92px;
 
-    padding: 16px 32px;
+    border: 1px solid var(--clients-logo-border);
+    border-radius: 4px;
 
     transition: fill 250ms var(--animation-timing-function);
+
+    &:hover,
+    :focus {
+        border-color: var(--accent-color);
+    }
 }
 
 .clients-logo {
