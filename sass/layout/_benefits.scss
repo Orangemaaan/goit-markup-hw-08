@@ -12,14 +12,32 @@
     justify-content: center;
 }
 
+.benefits-list {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        // align-items: center;
+        margin-right: -30px;
+        margin-bottom: -30px;
+    }
+}
+
 .benefits-list__item {
     display: block;
 
     &:not(:last-child) {
         margin-bottom: 30px;
     }
-}
 
-// .benefits-list {
-//     display: flex;
-// }
+    @media screen and (min-width: 768px) {
+        // display: flex;
+        width: calc((100% - 2 * 30px) / 2);
+        margin-right: 30px;
+        margin-bottom: 30px;
+
+        // &:nth-child(2n) {
+        //     margin-right: 0;
+        // }
+    }
+}

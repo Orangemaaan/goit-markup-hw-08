@@ -161,6 +161,12 @@ section {
   color: var(--text-color-theme-light);
 }
 
+@media screen and (min-width: 768px) {
+  .main-title {
+    width: 360px;
+  }
+}
+
 .social-link-list {
   display: flex;
   align-items: center;
@@ -291,8 +297,12 @@ section {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 1;
   }
   .mobile-menu__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: relative;
     padding-top: 48px;
     padding-bottom: 48px;
@@ -300,8 +310,8 @@ section {
   }
   .mobile-menu__close-btn {
     position: absolute;
-    top: 25px;
-    right: 12px;
+    top: 21px;
+    right: 25px;
     background-color: transparent;
     border: none;
     padding: 0;
@@ -323,9 +333,6 @@ section {
   }
   .mobile-nav-list__link.current {
     color: var(--accent-color);
-  }
-  .mobile-contact-list__container {
-    margin-top: 302px;
   }
   .mobile-contact-list__item:not(:last-child) {
     margin-bottom: 32px;
@@ -351,7 +358,9 @@ section {
     display: flex;
   }
   .mobile-social-link-list__item:not(:last-child) {
-    margin-right: 20px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
+    margin-right: 10px;
   }
   .mobile-social-link-list__link {
     font-size: 18px;
@@ -480,6 +489,16 @@ section {
   justify-content: center;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .benefits-list__item {
   display: block;
 }
@@ -488,8 +507,16 @@ section {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .benefits-list__item {
+    width: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .services {
-  padding-top: 0;
+  display: none;
 }
 
 .services-title {
@@ -955,8 +982,16 @@ section {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
+.filter-item-button:nth-child(-n + 3) {
+  margin-bottom: 21px;
+}
+
 .filter-item:not(:last-child) {
   margin-right: 8px;
+}
+
+.portfolio-item {
+  margin-bottom: 30px;
 }
 
 .project-card {

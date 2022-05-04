@@ -22,9 +22,10 @@
     margin: 0 auto 30px auto;
 
     color: var(--text-color-theme-light);
-}
 
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
+        width: 360px;
+    }
 }
 
 @media screen and (min-width: 1200px) {
