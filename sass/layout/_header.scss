@@ -1,5 +1,6 @@
 .header {
     position: relative;
+    border-bottom: 1px solid var(--border-color);
 }
 
 .header-container {
@@ -60,6 +61,7 @@
         flex-direction: column;
         justify-content: space-between;
         position: relative;
+        height: 100vh;
         padding-top: 48px;
         padding-bottom: 48px;
         padding-left: 40px;
@@ -99,6 +101,10 @@
         color: var(--accent-color);
     }
 
+    .mobile-contact-list {
+        width: 100%;
+    }
+
     .mobile-contact-list__item:not(:last-child) {
         margin-bottom: 32px;
     }
@@ -121,9 +127,9 @@
         color: var(--secondary-text-color-theme-dark);
     }
 
-    .mobile-social-link__container {
-        margin-top: 64px;
-    }
+    // .mobile-social-link__container {
+    //     margin-top: 64px;
+    // }
 
     .mobile-social-link-list {
         display: flex;
@@ -210,37 +216,17 @@
         color: var(--accent-color);
     }
 
-    // .nav-list__link {
-    //     position: relative;
-
-    //     display: block;
-    //     font-weight: 500;
-    //     font-size: 14px;
-    //     line-height: 1.2;
-    //     letter-spacing: 0.02em;
-    //     padding-top: 32px;
-    //     padding-bottom: 32px;
-
-    //     color: var(--primary-text-color-theme-dark);
-
-    //     &.current::after {
-    //         content: '';
-    //         position: absolute;
-    //         left: 0;
-    //         bottom: -1px;
-    //         display: block;
-    //         width: 100%;
-    //         height: 5px;
-    //         border-radius: 2px;
-    //         background-color: var(--accent-color);
-    //         transition: opacity 250ms var(--animation-timing-function);
-    //     }
-
     .contact-list {
         display: block;
     }
 
+    .contact-list__item:nth-child(1) {
+        margin-bottom: 10px;
+    }
+
     .contact-list__link {
+        display: flex;
+        align-items: center;
         font-size: 12px;
         font-weight: 500;
         line-height: 1.142;
@@ -254,9 +240,6 @@
         fill: var(--secondary-text-color-theme-dark);
     }
 }
-// .header {
-//     border-bottom: 1px solid var(--border-color);
-// }
 
 // .header-container {
 //     display: flex;

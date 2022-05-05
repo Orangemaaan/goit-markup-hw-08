@@ -1,7 +1,9 @@
+html,
 body {
     font-family: var(--primary-font-family);
     font-size: 14px;
     letter-spacing: 0.03em;
+    overflow-x: hidden;
 
     color: var(--primary-text-color-theme-dark);
 }

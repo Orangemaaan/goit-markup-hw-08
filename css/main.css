@@ -26,10 +26,12 @@
   clip: rect(0 0 0 0);
 }
 
+html,
 body {
   font-family: var(--primary-font-family);
   font-size: 14px;
   letter-spacing: 0.03em;
+  overflow-x: hidden;
   color: var(--primary-text-color-theme-dark);
 }
 
@@ -254,6 +256,7 @@ section {
 
 .header {
   position: relative;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .header-container {
@@ -304,6 +307,7 @@ section {
     flex-direction: column;
     justify-content: space-between;
     position: relative;
+    height: 100vh;
     padding-top: 48px;
     padding-bottom: 48px;
     padding-left: 40px;
@@ -334,6 +338,9 @@ section {
   .mobile-nav-list__link.current {
     color: var(--accent-color);
   }
+  .mobile-contact-list {
+    width: 100%;
+  }
   .mobile-contact-list__item:not(:last-child) {
     margin-bottom: 32px;
   }
@@ -350,9 +357,6 @@ section {
     line-height: 1.16;
     letter-spacing: 0.02em;
     color: var(--secondary-text-color-theme-dark);
-  }
-  .mobile-social-link__container {
-    margin-top: 64px;
   }
   .mobile-social-link-list {
     display: flex;
@@ -425,7 +429,12 @@ section {
   .contact-list {
     display: block;
   }
+  .contact-list__item:nth-child(1) {
+    margin-bottom: 10px;
+  }
   .contact-list__link {
+    display: flex;
+    align-items: center;
     font-size: 12px;
     font-weight: 500;
     line-height: 1.142;
@@ -565,6 +574,15 @@ section {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) {
+  .employees-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .employee-card {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
@@ -573,6 +591,14 @@ section {
 
 .employee-card:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .employee-card {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .employee-description {
@@ -626,6 +652,12 @@ section {
   transition: border-color 250ms var(--animation-timing-function);
 }
 
+@media screen and (min-width: 768px) {
+  .clients-list > .clients-list-item {
+    flex-basis: calc((100% - 3 * 30px) / 3);
+  }
+}
+
 .clients-list-item .clients-link {
   display: flex;
   align-items: center;
@@ -660,6 +692,14 @@ section {
 
 .footer-container {
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 }
 
 .logo-footer {
@@ -701,6 +741,12 @@ section {
 
 .subscription-buttons {
   margin-top: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .subscription-buttons {
+    margin-top: 0;
+  }
 }
 
 .join {
@@ -953,10 +999,16 @@ section {
   color: var(--primary-text-color-theme-dark);
 }
 
-.filter {
+.filter-list {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .filter-list {
+    justify-content: center;
+  }
 }
 
 .filter-item-button {
@@ -990,8 +1042,23 @@ section {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
+}
+
 .portfolio-item {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .portfolio-item {
+    margin-bottom: 0;
+  }
 }
 
 .project-card {
@@ -1003,6 +1070,14 @@ section {
 .portfolio-item:hover .project-card,
 .portfolio-item:focus .project-card {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) {
+  .project-card {
+    flex-basis: calc((100% - 2 * 30px) / 2);
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
 }
 
 .image-wrapper {
@@ -1047,6 +1122,12 @@ section {
   letter-spacing: 0.06em;
   margin-bottom: 4px;
   color: var(--primary-text-color-theme-dark);
+}
+
+@media screen and (min-width: 768px) {
+  .project-name {
+    font-size: 17px;
+  }
 }
 
 .project-type {
