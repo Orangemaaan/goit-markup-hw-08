@@ -9,4 +9,8 @@
     margin-bottom: 10px;
 
     color: var(--primary-text-color-theme-dark);
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+    }
 }

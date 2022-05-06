@@ -72,6 +72,13 @@ section {
   padding-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -169,6 +176,19 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .main-title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    width: 696px;
+    margin: 0 auto 30px auto;
+    color: var(--text-color-theme-light);
+  }
+}
+
 .social-link-list {
   display: flex;
   align-items: center;
@@ -252,6 +272,12 @@ section {
   text-align: center;
   margin-bottom: 10px;
   color: var(--primary-text-color-theme-dark);
+}
+
+@media screen and (min-width: 1200px) {
+  .subtitle {
+    text-align: start;
+  }
 }
 
 .header {
@@ -447,43 +473,135 @@ section {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-container {
+    display: flex;
+    align-items: center;
+  }
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    margin-left: 0;
+  }
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+  .contact-list {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+  .contact-list > .contact-list__item:nth-child(1) {
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .accent link {
+    color: var(--accent-color);
+  }
+  .logo-header {
+    margin-right: 93px;
+  }
+  .nav-list__link {
+    position: relative;
+    display: block;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: var(--primary-text-color-theme-dark);
+  }
+  .nav-list__link.current::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    display: block;
+    width: 100%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: var(--accent-color);
+    transition: opacity 250ms var(--animation-timing-function);
+  }
+  .nav-list__link:hover,
+  .nav-list__link :focus {
+    color: var(--accent-color);
+  }
+  .nav-list__link.current {
+    color: var(--accent-color);
+  }
+  .contact-list__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color-theme-dark);
+    transition: color 250ms var(--animation-timing-function);
+  }
+  .contact-list__link:hover,
+  .contact-list__link :focus {
+    color: var(--accent-color);
+  }
+  .icon-header {
+    padding: 0;
+    border: none;
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  .icon-header:hover,
+  .icon-header :focus {
+    fill: var(--accent-color);
+  }
+}
+
 .hero {
   text-align: center;
   padding-top: 118px;
   padding-bottom: 118px;
   height: 400px;
-  background-image: url(../images/mobile-hero-background.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-background.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/mobile-hero-background@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/mobile-hero-background@2x.jpg);
   }
 }
 
 @media screen and (min-width: 768px) {
   .hero {
-    background-image: url(../images/tablet-hero-background.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero-background.jpg);
   }
 }
 
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/tablet-hero-background@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/tablet-hero-background@2x.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .hero {
-    background-image: url(../images/desktop-hero-background.jpg);
+    max-width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-hero-background.jpg);
   }
 }
 
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
-    background-image: url(../images/desktop-hero-background@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/desktop-hero-background@2x.jpg);
   }
 }
 
@@ -498,6 +616,13 @@ section {
   justify-content: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .benefits-background {
+    width: 270px;
+    height: 120px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .benefits-list {
     display: flex;
@@ -505,6 +630,12 @@ section {
     justify-content: center;
     margin-right: -30px;
     margin-bottom: -30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .benefits-list {
+    flex-wrap: nowrap;
   }
 }
 
@@ -526,6 +657,13 @@ section {
 
 .services {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .services {
+    display: block;
+    padding-top: 0;
+  }
 }
 
 .services-title {
@@ -844,6 +982,13 @@ section {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 530px;
+    height: 580px;
+  }
+}
+
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -877,6 +1022,12 @@ section {
 
 .modal-form {
   width: 370px;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form {
+    width: 450px;
+  }
 }
 
 .modal-form-field {
@@ -969,6 +1120,13 @@ section {
   line-height: 1.16;
   letter-spacing: 0.03em;
   color: var(--secondary-text-color-theme-dark);
+}
+
+@media screen and (min-width: 1200px) {
+  .checkbox-label {
+    font-size: 14px;
+    line-height: 1.714;
+  }
 }
 
 .checkbox-label::before {
