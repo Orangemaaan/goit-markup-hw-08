@@ -13,6 +13,12 @@
         flex-wrap: wrap;
         justify-content: space-around;
     }
+
+    @media screen and (min-width: 1200px) {
+        text-align: start;
+        align-items: baseline;
+        justify-content: start;
+    }
 }
 
 .logo-footer {
@@ -63,6 +69,10 @@
     @media screen and (min-width: 768px) {
         margin-top: 0;
     }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+    }
 }
 
 .join {
@@ -77,6 +87,11 @@
 
 .mail-outs {
     margin-top: 60px;
+
+    @media screen and (min-width: 1200px) {
+        margin-top: 0;
+        margin-left: auto;
+    }
 }
 
 .subcribe {
@@ -92,6 +107,12 @@
 .footer-form {
     display: block;
     text-align: center;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+        text-align: start;
+        align-items: baseline;
+    }
 }
 
 .footer-form input {
@@ -122,6 +143,10 @@
 
         color: rgba(255, 255, 255, 0.6);
     }
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
 }
 
 .footer-btn {
@@ -130,11 +155,21 @@
     height: 50px;
 
     position: relative;
-    margin: 30px 0 auto;
+    margin: 30px auto;
+
+    @media screen and (min-width: 1200px) {
+        margin: 0 auto;
+    }
+}
+
+.subcribe-btn {
+    display: flex;
+    margin: auto;
 }
 
 .icon-send {
     position: absolute;
-
+    top: 13px;
+    right: 28px;
     margin-left: 10px;
 }
