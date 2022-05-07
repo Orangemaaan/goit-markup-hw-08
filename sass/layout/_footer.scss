@@ -8,16 +8,25 @@
 .footer-container {
     text-align: center;
 
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+    // @media screen and (min-width: 768px) {
+    //     display: flex;
+    //     flex-wrap: wrap;
+    //     justify-content: space-around;
+    // }
 
     @media screen and (min-width: 1200px) {
+        display: flex;
         text-align: start;
         align-items: baseline;
         justify-content: start;
+    }
+}
+
+.footer-wrap {
+    @media screen and (min-width: 768px) {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
     }
 }
 
@@ -142,6 +151,10 @@
         letter-spacing: 0.03em;
 
         color: rgba(255, 255, 255, 0.6);
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 450px;
     }
 
     @media screen and (min-width: 1200px) {
