@@ -154,7 +154,7 @@
     width: 200px;
     height: 50px;
 
-    position: relative;
+    // position: relative;
     margin: 30px auto;
 
     @media screen and (min-width: 1200px) {
@@ -162,14 +162,16 @@
     }
 }
 
-.subcribe-btn {
+.subscribe-btn {
     display: flex;
-    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .icon-send {
-    position: absolute;
-    top: 13px;
-    right: 28px;
+    // position: absolute;
+    // top: 13px;
+    // right: 28px;
     margin-left: 10px;
 }
